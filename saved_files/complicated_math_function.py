@@ -1,0 +1,1 @@
+def complicated_math_function(x, y, z):\n    # Calculate the value of a very complex mathematical expression\n    result = (x**2 + y**2 + z**2) / (x + y + z)\n    if x > y and y > z:\n        result += (x - y) * (y - z)\n    elif x < y and y < z:\n        result -= (y - x) * (z - y)\n    return result\n\n# Example usage:\nprint(complicated_math_function(1, 2, 3))

@@ -1,0 +1,35 @@
+Project: AI Task Agent with File, Search, and Weather Tools
+
+Description:
+This project is a command-line AI agent that intelligently handles multiple types of tasks by routing them to the appropriate tool or LLM. It integrates LLM-driven decision making, external data fetching, and file generation.
+
+Features:
+
+Task Routing: Automatically decides whether to:
+Perform a Wikipedia search
+Fetch current weather data
+Generate and save content to a file
+Answer general queries via LLM
+Wikipedia Tool: Fetches summaries from Wikipedia with proper fallback when no result is found.
+Weather Tool: Retrieves current weather information for a specified city using a geocoding API and Open-Meteo API.
+File Tool:
+Saves LLM-generated content as files with appropriate extensions (.txt, .py, .csv, .md, etc.).
+Handles multi-line text, escaped characters, and duplicates.
+Generates descriptive filenames automatically, using slugified, lowercase, underscore-separated format.
+LLM Integration: Supports multiple providers with fallback (Hugging Face, Groq, Gemini).
+Robustness:
+JSON parsing of LLM responses even if extra text is present
+Duplicate filename handling
+Multi-line content support
+
+Use Cases:
+
+Generate stories, fables, or instructive content and save them automatically.
+Produce structured data files (CSV, JSON) from LLM output.
+Quick Wikipedia lookups or weather queries via a single CLI interface.
+
+Key Benefits:
+
+Fully automated content generation and storage
+Flexible integration of multiple LLMs and APIs
+Minimal manual intervention required
